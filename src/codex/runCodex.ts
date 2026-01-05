@@ -623,7 +623,7 @@ export async function runCodex(opts: {
                         case 'default': return 'untrusted' as const;
                         case 'read-only': return 'never' as const;
                         case 'safe-yolo': return 'on-failure' as const;
-                        case 'yolo': return 'on-failure' as const;
+                        case 'yolo': return 'never' as const;
                     }
                 })();
                 const sandbox = (() => {
